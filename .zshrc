@@ -118,8 +118,11 @@ alias vim="nvim"
 alias vi="vim"
 alias htest="/Users/dvazx/repos/holded-app/vendor/bin/phpunit -d memory_limit=1024M"
 alias htestall="htest"
-alias hstan="/Users/dvazx/repos/holded-app/vendor/bin/phpstan analyse --memory-limit 1024M"
+alias hclean="~/repos/holded-app/apps/operational/bin/console cache:clear"
+alias hstan="/Users/dvazx/repos/holded-app/vendor/bin/phpstan analyse --memory-limit 2048M"
+alias hfix="/Users/dvazx/repos/holded-app/vendor/bin/php-cs-fixer fix"
 alias up="cd .."
+alias gwork="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))'"
 export XDEBUG_MODE=debug
 
 gmit(){
@@ -138,8 +141,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export ANDROID_SDK_ROOT="/Users/dvazx/Library/Android/sdk"
 export PATH=$ANDROID_SDK_ROOT:$PATH
 export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+#export VOLTA_HOME="$HOME/.volta"
+#export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT="/Users/dvazx/Downloads/cocos2d-x-3.17.2/tools/cocos2d-console/bin"
@@ -149,3 +152,4 @@ export PATH=$COCOS_CONSOLE_ROOT:$PATH
 export COCOS_TEMPLATES_ROOT="/Users/dvazx/Downloads/cocos2d-x-3.17.2/templates"
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 export NDK_ROOT="/Users/dvazx/Library/Android/ndk/NDK"
+
