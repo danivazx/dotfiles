@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+#
+#
 
+alias web="127.0.0.1"
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/dvazx/.oh-my-zsh"
 
@@ -120,9 +123,15 @@ alias htest="/Users/dvazx/repos/holded-app/vendor/bin/phpunit -d memory_limit=10
 alias htestall="htest"
 alias hclean="~/repos/holded-app/apps/operational/bin/console cache:clear"
 alias hstan="/Users/dvazx/repos/holded-app/vendor/bin/phpstan analyse --memory-limit 2048M"
-alias hfix="/Users/dvazx/repos/holded-app/vendor/bin/php-cs-fixer fix"
+alias hfix="/Users/dvazx/repos/holded-app/vendor/bin/php-cs-fixer fix && /Users/dvazx/repos/holded-app/vendor/bin/php-cs-fixer fix --config .php-cs-fixer.legacy.dist.php"
 alias up="cd .."
 alias gwork="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) (%(color:green)%(committerdate:relative)%(color:reset))'"
+alias amend="git add -A && git commit --amend"
+alias tree1="tree -L 1"
+alias tree2="tree -L 2"
+alias tree3="tree -L 3"
+alias tree4="tree -L 4"
+alias tree5="tree -L 5"
 export XDEBUG_MODE=debug
 
 gmit(){
@@ -130,7 +139,6 @@ gmit(){
 }
 
 alias xit=exit
-export PATH=/usr/local/opt/php@7.4/bin:$PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -153,3 +161,10 @@ export COCOS_TEMPLATES_ROOT="/Users/dvazx/Downloads/cocos2d-x-3.17.2/templates"
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 export NDK_ROOT="/Users/dvazx/Library/Android/ndk/NDK"
 
+#export PATH="/usr/local/opt/php@7.4/bin:$PATH"
+#export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
+export PATH="/usr/local/opt/php@8.2/bin:$PATH"
+export PATH="/usr/local/opt/php@8.2/sbin:$PATH"
+export PATH="/Users/dvazx/devel/flutter/bin:$PATH"
+
+#export PATH="/usr/local/opt/node@16/bin:$PATH"
