@@ -398,5 +398,35 @@
         "key": "alt+cmd+k",
         "command": "cursorTop",
         "when": "textInputFocus"
+    },
+    {
+        "key": "alt+cmd+c",
+        "command": "markdown.extension.checkTaskList",
+        "when": "false"
+    },
+    {
+        "key": "alt+c",
+        "command": "-markdown.extension.checkTaskList",
+        "when": "false"
+    },
+    {
+        "key": "alt+cmd+c",
+        "command": "-toggleSearchEditorCaseSensitive",
+        "when": "inSearchEditor && searchInputBoxFocus"
+    },
+    {
+        "key": "alt+cmd+c",
+        "command": "-workbench.action.terminal.toggleFindCaseSensitive",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+c",
+        "command": "-toggleFindCaseSensitive",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+cmd+c",
+        "command": "-toggleSearchCaseSensitive",
+        "when": "searchViewletFocus && !fileMatchOrFolderMatchFocus"
     }
 ]
