@@ -50,7 +50,7 @@
                     "support.class.component.tsx"
                 ],
                 "settings": {
-                    "foreground": "#A277FF" // Light svelte orange logo color
+                    "foreground": "#A277FF" // Make component tags purple in tsx
                 }
             },
             {
@@ -58,7 +58,7 @@
                     "meta.jsx.children.tsx"
                 ],
                 "settings": {
-                    "foreground": "#EDECEE" // Light svelte orange logo color
+                    "foreground": "#EDECEE" // Make children tags white in tsx
                 }
             },
         ],
