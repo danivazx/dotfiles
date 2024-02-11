@@ -1,0 +1,72 @@
+{
+    "editor.fontSize": 14.5,
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "svelte.enable-ts-plugin": true,
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.guides.indentation": false,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "workbench.startupEditor": "none",
+    "svelte.plugin.svelte.note-new-transformation": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.definitionLinkOpensInPeek": true,
+    "workbench.colorCustomizations": {
+        "editor.findMatchBackground": "#ff00a669",
+        "editor.selectionBackground": "#bbbbbb55",
+        "editorCursor.foreground": "#eeff00",
+    },
+    "update.mode": "none",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false,
+        "yaml": true
+    },
+    "window.commandCenter": false,
+    "workbench.colorTheme": "Aura Soft Dark",
+    "workbench.reduceMotion": "on",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "keyword.control.svelte",
+                    "keyword.control.conditional.svelte",
+                    "support.class.component.svelte"
+                ],
+                "settings": {
+                    "foreground": "#ff926e" // Light svelte orange logo color
+                }
+            },
+            {
+                "scope": [
+                    "support.class.component.tsx"
+                ],
+                "settings": {
+                    "foreground": "#A277FF" // Light svelte orange logo color
+                }
+            },
+            {
+                "scope": [
+                    "meta.jsx.children.tsx"
+                ],
+                "settings": {
+                    "foreground": "#EDECEE" // Light svelte orange logo color
+                }
+            },
+        ],
+    },
+    "jestrunner.disableCodeLens": true,
+    "editor.suggest.showSnippets": false,
+    "settingsSync.ignoredExtensions": [
+        "github.copilot-chat",
+        "github.copilot"
+    ]
+}
